@@ -22,7 +22,7 @@ app.add_middleware(
 
 MODEL = tf.keras.models.load_model("../saved_models/1")
 
-CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
+CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy","leaf mold", "target spot","curl virus"]
 
 @app.get("/ping")
 async def ping():
